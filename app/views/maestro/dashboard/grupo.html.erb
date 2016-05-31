@@ -1,0 +1,66 @@
+<h1>Grupo</h1>
+
+
+<div class="row">
+  <div class="col-sm-12 text-center bootstrap-welcome">
+    <h1><%= @saludo %></h1>
+        <h1><%= $usuarioNombre %></h1>
+        <br>
+
+        <br>
+  <%= link_to "<button>Temario</button>".html_safe, "/maestro" %>
+
+  </div>
+</div>
+<!-- Codes by HTML.am -->
+
+<!-- CSS Code -->
+<style type="text/css" scoped>
+table.GeneratedTable {
+width:100%;
+background-color:#FFFFFF;
+border-collapse:collapse;border-width:1px;
+
+border-style:solid;
+
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+border-width:1px;
+
+border-style:solid;
+padding:3px;
+}
+
+table.GeneratedTable thead {
+
+}
+</style>
+
+
+<table class="GeneratedTable">
+<thead>
+  <tr>
+  <th>alumno</th>
+  <th>Quizz 1</th>
+  <th>Quizz 2</th>
+  <th>Quizz 3</th>
+  <th>Quizz 4</th>
+  <th>Quizz 5</th>
+  <th>Gráfica</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>Luis</td>
+  <td>100</td>
+  <td>90</td>
+  <td>80</td>
+  <td>70</td>
+  <td>70</td>
+  <td><%= link_to 'Ver', :action => :grafica %></td>
+
+  </tr>
+
+</tbody>
+</table>
